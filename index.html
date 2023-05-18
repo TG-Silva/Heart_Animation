@@ -1,0 +1,36 @@
+<head>
+    <style>
+      .heart {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background: url(https://raw.githubusercontent.com/nakulrathore/materialcolors/gh-pages/heart.png) no-repeat;
+        background-position: 0 0;
+        cursor: pointer;
+        animation: fave-heart 1s steps(28);
+      }
+      .heart:hover {
+        background-position: -2800px 0;
+        transition: background 1s steps(28);
+      }
+      @keyframes fave-heart {
+        0% {
+          background-position: 0 0;
+        }
+        100% {
+          background-position: -2800px 0;
+        }
+      }
+  
+  
+    </style>
+  
+  </head>
+  
+  <body>
+    <div class="heart"></div>
+  
+  </body>
